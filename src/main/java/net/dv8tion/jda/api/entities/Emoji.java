@@ -168,7 +168,7 @@ public class Emoji implements SerializableData, IMentionable
 
     /**
      * Parses the provided markdown formatting to an Emoji instance.
-     * <h4>Example</h4>
+     * <p><b>Example</b><br>
      * <pre>{@code
      * // animated custom emoji
      * parseMarkdown("<a:dance:123456789123456789>");

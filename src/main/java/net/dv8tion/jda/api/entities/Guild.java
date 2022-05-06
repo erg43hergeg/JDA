@@ -187,7 +187,7 @@ public interface Guild extends IGuildChannelContainer, ISnowflake
      *
      * <p>You need the OAuth2 scope {@code "applications.commands"} in order to add commands to a guild.
      *
-     * <h4>Examples</h4>
+     * <p><b>Examples</b><br>
      * <pre>{@code
      * // Set list to 2 commands
      * guild.updateCommands()
@@ -532,7 +532,7 @@ public interface Guild extends IGuildChannelContainer, ISnowflake
     /**
      * Re-apply the {@link net.dv8tion.jda.api.utils.MemberCachePolicy MemberCachePolicy} of this session to all {@link Member Members} of this Guild.
      *
-     * <h4>Example</h4>
+     * <p><b>Example</b><br>
      * <pre>{@code
      * // Check if the members of this guild have at least 50% bots (bot collection/farm)
      * public void checkBots(Guild guild) {
@@ -1984,7 +1984,7 @@ public interface Guild extends IGuildChannelContainer, ISnowflake
      * this Guild.
      * <br>This iterates from the most recent action to the first logged one. (Limit 90 days into history by discord api)
      *
-     * <h4>Examples</h4>
+     * <p><b>Examples</b><br>
      * <pre>{@code
      * public void logBan(GuildBanEvent event) {
      *     Guild guild = event.getGuild();
@@ -3781,7 +3781,7 @@ public interface Guild extends IGuildChannelContainer, ISnowflake
      * <br>None of the provided roles may be the <u>Public Role</u> of the current Guild.
      * <br>If a role is both in {@code rolesToAdd} and {@code rolesToRemove} it will be removed.
      *
-     * <h4>Example</h4>
+     * <p><b>Example</b><br>
      * <pre>{@code
      * public static void promote(Member member) {
      *     Guild guild = member.getGuild();
@@ -3792,7 +3792,7 @@ public interface Guild extends IGuildChannelContainer, ISnowflake
      * }
      * }</pre>
      *
-     * <h4>Warning</h4>
+     * <p><b>Warning</b><br>
      * <b>This may <u>not</u> be used together with any other role add/remove/modify methods for the same Member
      * within one event listener cycle! The changes made by this require cache updates which are triggered by
      * lifecycle events which are received later. This may only be called again once the specific Member has been updated
@@ -3849,7 +3849,7 @@ public interface Guild extends IGuildChannelContainer, ISnowflake
      * Modifies the complete {@link net.dv8tion.jda.api.entities.Role Role} set of the specified {@link net.dv8tion.jda.api.entities.Member Member}
      * <br>The provided roles will replace all current Roles of the specified Member.
      *
-     * <h4>Warning</h4>
+     * <p><b>Warning</b><br>
      * <b>This may <u>not</u> be used together with any other role add/remove/modify methods for the same Member
      * within one event listener cycle! The changes made by this require cache updates which are triggered by
      * lifecycle events which are received later. This may only be called again once the specific Member has been updated
@@ -3867,7 +3867,7 @@ public interface Guild extends IGuildChannelContainer, ISnowflake
      *     <br>The target Member was removed from the Guild before finishing the task</li>
      * </ul>
      *
-     * <h4>Example</h4>
+     * <p><b>Example</b><br>
      * <pre>{@code
      * public static void removeRoles(Member member) {
      *     Guild guild = member.getGuild();
@@ -3911,7 +3911,7 @@ public interface Guild extends IGuildChannelContainer, ISnowflake
      *
      * <p><u>The new roles <b>must not</b> contain the Public Role of the Guild</u>
      *
-     * <h4>Warning</h4>
+     * <p><b>Warning</b><br>
      * <b>This may <u>not</u> be used together with any other role add/remove/modify methods for the same Member
      * within one event listener cycle! The changes made by this require cache updates which are triggered by
      * lifecycle events which are received later. This may only be called again once the specific Member has been updated
@@ -3927,7 +3927,7 @@ public interface Guild extends IGuildChannelContainer, ISnowflake
      *     <br>The target Member was removed from the Guild before finishing the task</li>
      * </ul>
      *
-     * <h4>Example</h4>
+     * <p><b>Example</b><br>
      * <pre>{@code
      * public static void makeModerator(Member member) {
      *     Guild guild = member.getGuild();

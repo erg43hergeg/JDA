@@ -19,7 +19,7 @@
  * and {@link net.dv8tion.jda.api.events.emote.EmoteRemovedEvent removed emotes}.
  * <br>Important to remember that {@link net.dv8tion.jda.api.entities.Emote Emotes} are not the same as unicode emoji!
  *
- * <h2>Requirements</h2>
+ * <p><b>Requirements</b><br>
  *
  * <p>These events require the {@link net.dv8tion.jda.api.utils.cache.CacheFlag#EMOTE EMOTE} CacheFlag to be enabled, which requires
  * the {@link net.dv8tion.jda.api.requests.GatewayIntent#GUILD_EMOJIS GUILD_EMOJIS} intent.
