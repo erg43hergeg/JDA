@@ -22,7 +22,6 @@ import net.dv8tion.jda.api.utils.data.DataArray;
 import net.dv8tion.jda.api.utils.data.DataObject;
 
 import javax.annotation.Nonnull;
-import java.util.List;
 import java.util.Objects;
 
 /**
