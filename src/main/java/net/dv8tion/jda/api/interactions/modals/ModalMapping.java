@@ -18,9 +18,11 @@ package net.dv8tion.jda.api.interactions.modals;
 
 import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent;
 import net.dv8tion.jda.api.interactions.components.Component;
+import net.dv8tion.jda.api.utils.data.DataArray;
 import net.dv8tion.jda.api.utils.data.DataObject;
 
 import javax.annotation.Nonnull;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -38,8 +40,13 @@ public class ModalMapping
     public ModalMapping(DataObject object)
     {
         this.id = object.getString("custom_id");
-        this.value = object.getString("value");
         this.type = Component.Type.fromKey(object.getInt("type"));
+        if (this.type == Component.Type.SELECT_MENU) {
+            DataArray xd = object.getArray("values");
+            this.value = xd.getString(0);
+        } else {
+            this.value = object.getString("value");
+        }
     }
 
     /**
